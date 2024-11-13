@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="/css/registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="illustration">
+                <img src="/images/registerpic.jpg" alt="Illustration">
+                <div class="user-type">
+                    <label><input type="radio" name="type"> As a Food Donator</label>
+                    <label><input type="radio" name="type"> As a Food Shelter Provider</label>
+                </div>
+            </div>
+            <div class="form-content">
+                <h2>Create an account</h2>
+                <p>Already have an account? <a href="#">Log in</a></p>
+                
+                <form id="registerform" onsubmit="return false;">
+                    <div class="form-row">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+
+                    <div class="terms">
+                        <input type="checkbox" required>
+                        <label> I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+
+                    <button type="submit" class="create-account">Create account</button>
+                    <p class="or-register">Or Register with</p>
+                    <button type="button" class="google-signup">
+                        <img src="/images/googleicon.jpg" alt="Google Logo"> Google
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/registratioin.js"></script>
+</body>
+</html>

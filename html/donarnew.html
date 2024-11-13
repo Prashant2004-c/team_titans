@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documnet</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+         <link rel="stylesheet" href="/css/donarnew.css">    
+</head>
+<body>
+<div class="main"> 
+        <nav>
+            
+            <ul class="prenav">
+                <li><div class="logo">
+                    <img src="/images/LOGO-removebg-preview.png" alt="">
+                    <h2>meal<span>Connect</span></h2> 
+                </div></li>
+                <li><a href="#" id="tobehidden">Home </a></li>
+                <li><a href="#" id="tobehidden">About Us</a></li>
+                <li><a href="#" id="tobehidden">How It Works</a></li>
+                <li><a href="#" id="tobehidden">Login</a></li>
+                <li id="menubtn"> <a href="#"><i class="ri-menu-line" id="icon"></i></a></li>
+            </ul>
+            <ul class="sidebar">
+                <li id="sidebar-logo">
+                    <!-- <h2>meal<span>Connect</span> </h2>  -->
+                    <i class="ri-close-large-fill" ></i>
+                   
+                </li>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="maincarausel">
+            <div class="carousel-container">
+                <div class="carousel">
+                    
+                    <div class="divimg">
+                        <img src="/images/pic33.jpg" alt="Image 3" class="clone">
+                    </div>
+        
+                    
+                    <div class="divimg">
+                        <img src="/images/pic11.jpg" alt="Image 1">
+                    </div>
+                    <div class="divimg">
+                        <img src="/images/pic2.jpg" alt="Image 2">
+                    </div>
+                    <div class="divimg">
+                        <img src="/images/pic33.jpg" alt="Image 3">
+                    </div>
+        
+                    
+                    <div class="divimg">
+                        <img src="/images/pic11.jpg" alt="Image 1" class="clone">
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button onclick="addImage()">Upload Photo</button>
+                </div>
+                <div class="indicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+                
+            </div>
+            <div class="profile">
+                <div class="pic">
+                    <img src="/images/profile.png" alt="">
+                </div>
+                <div class="info">
+                    <h2 class="user-name">The Lalita</h2>
+                    <p class="donation-number">
+                        <h5 style="font-weight: 500;">300 Donation</h5>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+            
+</div>
+<div class="main3">
+    
+    <div class="inner-main3">
+        <div class="inner-main3-right">
+            <img src="/images/finaldonation.png" alt="">
+        </div>
+        <div class="inner-main3-left">
+            <h3>"Every Meal Counts, Every Heart Matters"</h3>
+            <p>
+                Join us in our mission to end food waste and fight hunger. By donating today, you’re not just giving food—you’re giving hope and happiness to families in need. Together, we can build a stronger, more caring community
+            </p>
+            <button class="donation">
+                Donate Now
+            </button>
+        </div>
+    </div>
+</div>
+<div class="main2">
+    <div class="mainwrap">
+        <div class="wrap-left">
+            <h3 id="wrap-left-h3">mealConnect Shelters near you</h3>
+            <div class="map">
+
+            </div>
+            <h3 id="wrap-left-h3">Pending Request</h3>
+            <div class="pending-req">
+
+            </div>
+        </div>
+        <div class="wrap-right">
+            <div class="donation-card">
+                <h3 id="headingname">Tikka Takeover</h3>
+                <img src="https://theeastcoastkitchen.com/wp-content/uploads/2022/02/TIKKA-MASALA-05-1024x576.jpg" alt="Masala Tikka Image">
+                <p id="inpitemname"><strong>Item:</strong> Masala Tikka</p>
+                <p id="inpqunatity"><strong>Quantity:</strong> 18</p>
+                <p id="inpavailability"><strong>Availability:</strong> 7 PM - 11 PM</p>
+                <p id="inplocation"><strong>Location:</strong> 38 Colaba Causeway, Mumbai, Maharashtra, India</p>
+                <button class="edit-btn">Edit</button>
+                <button class="delete-btn">Delete</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="popup">
+        <div class="overlay">
+            <div class="form-container">
+                <form id="registerform">
+                    <h2 class="form-title">Enter Details of Food</h2>
+                
+                <label for="food-name">Food Name:</label>
+                <input type="text" id="food-name" placeholder="Enter food name">
+                
+                <label for="quantity">Quantity:</label>
+                <div class="time-group">
+                    <input type="text" id="quantity" placeholder="Enter quantity">
+                    <select id="quantity-unit">
+                        <option>kg</option>
+                        <option>grams</option>
+                        <option>liters</option>
+                    </select>
+                </div>
+        
+                <label for="expiry-date">Expiry Date:</label>
+                <input type="date" id="expiry-date">
+                
+                <label for="pickup-time">Pickup Timing:</label>
+                <div class="time-group">
+                   
+                    <input type="text" placeholder="From" id="from-hour">
+                    <select id="from-period">
+                        <option>AM</option>
+                        <option>PM</option>
+                    </select>
+                    
+                    <input type="text" placeholder="To" id="to-hour">
+                     <select id="to-period">
+                        <option>AM</option>
+                        <option>PM</option>
+                    </select>
+                </div>
+                
+                <label for="upload-image">Upload Image:</label>
+                <input type="text" id="upload-image" placeholder="Enter link of image">
+                <div class="divbtn">
+                    <button class="submit-btn">Submit</button>
+                    <div class="cancel-btn">Cancel</div>
+                </div>
+                
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/donarpagenew.js"></script>    
+   
+</body>
+</html>

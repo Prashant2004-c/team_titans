@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+<body>
+    <div class="main">
+        <button class="modal">
+            Open-popup
+        </button>
+        <div class="popup">
+            <div class="overlay">
+                <div class="form-container">
+                    <h2 class="form-title">Enter Details of Food</h2>
+                    
+                    <label for="food-name">Food Name:</label>
+                    <input type="text" id="food-name" placeholder="Enter food name">
+                    
+                    <label for="quantity">Quantity:</label>
+                    <div class="time-group">
+                        <input type="text" id="quantity" placeholder="Enter quantity">
+                        <select>
+                            <option>kg</option>
+                            <option>grams</option>
+                            <option>liters</option>
+                        </select>
+                    </div>
+            
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="date" id="expiry-date">
+                    
+                    <label for="pickup-time">Pickup Timing:</label>
+                    <div class="time-group">
+                       
+                        <input type="text" placeholder="From">
+                        <select>
+                            <option>AM</option>
+                            <option>PM</option>
+                        </select>
+                        
+                        <input type="text" placeholder="To">
+                        <select>
+                            <option>AM</option>
+                            <option>PM</option>
+                        </select>
+                    </div>
+                    
+                    <label for="upload-image">Upload Image:</label>
+                    <input type="file" id="upload-image">
+                    <div class="divbtn">
+                        <button class="submit-btn">Submit</button>
+                        <div class="cancel-btn">Cancel</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/modal.js"></script>
+</body>
+</html>
